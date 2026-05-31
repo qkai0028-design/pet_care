@@ -16,6 +16,9 @@ build/
 # Vercel
 .vercel/
 
+# Netlify
+.netlify/
+
 # Logs
 *.log
 npm-debug.log*

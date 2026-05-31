@@ -1,3 +1,5 @@
+import { BookingForm } from "@/components/booking-form";
+
 const services = ["基础洗护", "精修造型", "猫咪护理", "皮毛护理"];
 
 const packages = [
@@ -44,7 +46,7 @@ export default function Home() {
           <div className="hero-inner">
             <div className="hero-copy">
               <p className="eyebrow">一对一洗护 · 猫犬分区 · 全程可沟通</p>
-              <h1>Every bath should feel thoughtfully cared for.</h1>
+              <h1>每一次洗护，都值得被认真对待。</h1>
               <p className="hero-text">
                 温和洗护、精修造型、皮毛护理。到店先检查状态，再安排适合毛孩的节奏。
               </p>
@@ -113,20 +115,7 @@ export default function Home() {
                 <h2>安排一次轻松洗护。</h2>
                 <p>营业时间：周二至周日 10:00-20:00。提交后我们会确认档期和预计价格。</p>
               </div>
-              <form className="booking-form">
-                <input type="text" name="name" placeholder="你的称呼" aria-label="你的称呼" />
-                <input type="tel" name="phone" placeholder="联系电话" aria-label="联系电话" />
-                <select name="service" aria-label="选择服务" defaultValue="">
-                  <option value="">选择服务</option>
-                  <option>轻柔净洗</option>
-                  <option>全套洗护</option>
-                  <option>修剪造型</option>
-                  <option>猫咪护理</option>
-                </select>
-                <button className="button" type="submit">
-                  提交预约
-                </button>
-              </form>
+              <BookingForm />
             </div>
           </div>
         </section>

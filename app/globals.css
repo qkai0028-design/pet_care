@@ -122,6 +122,11 @@ p {
   box-shadow: none;
 }
 
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.68;
+}
+
 .hero {
   min-height: 76vh;
   padding: 126px 0 52px;
@@ -516,6 +521,20 @@ select:focus {
   border-color: var(--mint);
 }
 
+.form-message {
+  margin: 2px 0 0;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.form-message.success {
+  color: #3f765e;
+}
+
+.form-message.error {
+  color: #b94d3b;
+}
+
 .site-footer {
   padding: 30px 0 40px;
   color: #5b6763;
@@ -566,6 +585,7 @@ select:focus {
   .booking {
     padding: 30px;
   }
+
 }
 
 @media (max-width: 560px) {
